@@ -30,9 +30,6 @@
 #include <iomanip>
 #include <limits>
 #include <string>
-#include <sstream>
-#include <thread>
-#include <chrono>
 using namespace std;
 
 // ==========================================
@@ -333,44 +330,11 @@ void displayMenu(int cacheSize) {
 // ==========================================
 // main()
 // ==========================================
-void loadingScreen()
-{
-    system("cls");
-
-    cout << CYAN << BOLD;
-    cout << "\n";
-    cout << "=========================================================\n";
-    cout << "             LRU CACHE SIMULATOR\n";
-    cout << "=========================================================\n";
-    cout << RESET;
-
-    cout << "\nInitializing Project...\n\n";
-
-    cout << "Loading ";
-
-    for(int i = 0; i <= 30; i++)
-    {
-        cout << char(219);
-        cout.flush();
-        this_thread::sleep_for(chrono::milliseconds(70));
-    }
-
-    cout << " 100%\n";
-
-    this_thread::sleep_for(chrono::milliseconds(500));
-
-    cout << GREEN << "\nProject Loaded Successfully!\n" << RESET;
-
-    this_thread::sleep_for(chrono::milliseconds(1200));
-
-    system("cls");
-}
 int main() {
-    #ifdef _WIN32
-system("chcp 65001 > nul");
-#endif
-loadingScreen();
     // Enable UTF-8 / ANSI on Windows terminals
+    #ifdef _WIN32
+    system("chcp 65001 > nul");
+    #endif
 
     cout << "\n";
     cout << CYAN << BOLD;
