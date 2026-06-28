@@ -76,10 +76,17 @@ The simulator is built in **C++17** using a **stack** as the core data structure
 ## Project Structure
 
 ```
-LRU-Cache-Simulator/
-├── lru_cache.cpp       ← full source code (single file)
-└── README.md           ← this file
-```
+
+LRU-CACHE-SIMULATOR/ 
+│
+ ├── main.cpp 
+ ├── README.md
+ └── screenshots/ 
+    ├── homescreen.png 
+    ├── mainmenu.png 
+    ├── cache_hit.png 
+    ├── statistics.png 
+    └── exit.png
 
 ---
 
