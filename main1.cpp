@@ -30,6 +30,7 @@
 #include <iomanip>
 #include <limits>
 #include <string>
+#include <sstream
 using namespace std;
 
 // ==========================================
